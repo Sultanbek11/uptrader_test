@@ -1,5 +1,6 @@
-from django.urls import path, include
+from django.urls import path
+from .views import my_view
 
 urlpatterns = [
-    path('/', include('treemenu.urls')),
+    path('view/', my_view, name='my-view'),
 ]
